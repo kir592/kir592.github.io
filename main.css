@@ -60,4 +60,20 @@ a:hover
 color: #c7c7ff;
 text-decoration: underline;
 }  
+
+.blog
+{
+font-family: monos;
+font-size: 15px;
+color: #c7c7ff;
+width: 900px;
+}
+
+.question
+{
+font-weight: bold;
+
+}
+
+
 </style>
