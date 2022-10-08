@@ -12,6 +12,8 @@ font-family: monos; src: url('fonts/monospace.medium.ttf')
 
 .ref
 {
+margin: auto;
+width: 50%;
 font-family: monos;
 font-size: 22px;
 color: #c7c7ff;
