@@ -12,6 +12,7 @@ font-family: monos; src: url('fonts/monospace.medium.ttf')
 
 .ref
 {
+text-align: center;
 margin: auto;
 width: 50%;
 font-family: monos;
@@ -21,6 +22,7 @@ color: #c7c7ff;
 
 .ref2
 {
+text-align: center;
 margin: auto;
 width: 50%;
 font-family: monos;
@@ -45,6 +47,9 @@ margin-top: 200px;
 
 body
 {
+text-align: center;
+margin: auto;
+width: 50%;
 background: #191820;
 }
 
@@ -67,6 +72,7 @@ text-decoration: underline;
 
 .blog
 {
+text-align: center;
 margin: auto;
 width: 50%;
 font-family: monos;
