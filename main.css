@@ -94,8 +94,10 @@ width: 900px;
 .question
 {
 font-weight: bold;
-
 }
 
+.element {
+  display: inline-block;  
+}
 
 </style>
