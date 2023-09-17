@@ -7,7 +7,7 @@ font-family: win; src: url('fonts/windows_command_prompt.ttf')
 font-family: bitty; src: url('fonts/Bittypix Monospace.otf')
 }
 @font-face { 
-font-family: monos; src: url('fonts/SpaceMono-Regular.ttf')
+font-family: monos; src: url('fonts/monospace.medium.ttf')
 }
 
 
@@ -26,8 +26,8 @@ background: #191820;
 text-align: center;
 margin: auto;
 width: 50%;
-font-family: monos;
-font-size: 11px;
+font-family: bitty;
+font-size: 8px;
 color: #6fbdd6;
 width: 900px;
 }
@@ -42,7 +42,7 @@ color: #6fbdd6;
 }
 
 #logo{
-  padding-top: 50%;
+  margin-top: 50%;
 }
 
 
