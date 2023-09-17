@@ -22,12 +22,11 @@ background: #191820;
 
 .blog
 {
-
 text-align: center;
 margin: auto;
 width: 50%;
-font-family: bitty;
-font-size: 8px;
+font-family: monospace;
+font-size: 10px;
 color: #6fbdd6;
 width: 900px;
 }
