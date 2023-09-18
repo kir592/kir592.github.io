@@ -1,7 +1,6 @@
 
 
-body
-{
+body {
 text-align: center;
 margin: auto;
 width: 50%;
@@ -9,8 +8,7 @@ background: #191820;
 }
 
 
-.blog
-{
+.blog {
 text-align: center;
 margin: auto;
 width: 50%;
@@ -20,17 +18,13 @@ color: #6fbdd6;
   margin-top: 50%;
 }
 
-a{
+a {
 color: #6fbdd6;
 }
 
-#logo:hover{
+#logo {
   animation: shake 0.7s;
   animation-iteration-count: infinite;
-}
-
-#logo{
-
 }
 
 
