@@ -35,6 +35,7 @@ a {
   animation-iteration-count: infinite;
   height: 10vh;
   padding-bottom: 1vh;
+  min-height: 50px;
 }
 
 .icon{
