@@ -1,9 +1,6 @@
 
 
 body {
-  text-align: center;
-  margin: auto;
-  width: 50%;
   background: #798ac2;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
@@ -11,76 +8,98 @@ body {
   background-size: 50px 50px;
 }
 
-#links{
-  padding-top: 1vh;
-}
-
-.blog {
-  font-family: monospace;
-  font-size: 10px;
-  color: #6fbdd6;
-  margin-top: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 a {
   color: #6fbdd6;
 }
 
-#logo {
-  animation: shake 0.7s;
-  animation-iteration-count: infinite;
-  height: 10vh;
-  padding-bottom: 1vh;
-  min-height: 50px;
-}
-
-.icon{
-  height: 48px;
-}
-
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-1px, 0px) rotate(1deg); }
-  30% { transform: translate(1px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-1px, 1px) rotate(0deg); }
-  70% { transform: translate(1px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-
-/* typing animation */
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.terminal {
-  color: rgb(255, 255, 255);
-  font-family: monospace;
-  font-size: 12px;
+.polaroid {
+  background: white;
+  padding: 10px 10px 25px 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
   width: fit-content;
 }
 
-.typing {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid rgb(255, 255, 255); /* Static cursor */
-  width: 0;
-  animation: typing 3s steps(30, end) infinite alternate, fadeout 0s linear 3s infinite;
+.rotationl {
+  transform: rotate(-2deg); /* Optional vintage tilt */
+}
+
+.rotationr {
+  transform: rotate(2deg); /* Optional vintage tilt */
+}
+
+.polaroid img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+
+.polaroid .caption {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.polaroid-gallery {
+}
+
+.business-card {
+  width: 360px;
+  background-color: #f8f5f0; /* Ivory */
+  color: #222;
+  font-family: 'Garamond', 'Times New Roman', serif;
+  padding: 40px 30px;
+  margin: 10vh auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.business-card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.business-card .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.business-card .title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.business-card .company {
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.icon:hover {
+  filter: grayscale(0%);
 }
