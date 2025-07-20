@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color:#000;
 }
 
 .polaroid {
@@ -96,14 +97,12 @@ a {
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
-  filter: grayscale(100%);
-  transition: filter 0.2s ease;
+  height: 32px;
+  width: 32px;
 }
 
 .icon:hover {
-  filter: grayscale(0%);
+ box-shadow: inset 0 0 0 1px #000; /* 3px inner black border */
 }
 
 
@@ -111,8 +110,8 @@ a {
   border: 1px solid;
   border-color:#222;
   display: flex;
-  width: 500px;
-  height: 200px;
+  width: 400px;
+  height: 150px;
   background: #f8f1e4;
   font-family: 'Georgia', serif;
   position: relative;
@@ -134,14 +133,14 @@ a {
 }
 
 .ticket-content h1 {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 0 10px;
   color: #2c2c2c;
 }
 
 .ticket-content p {
   margin: 4px 0;
-  font-size: 16px;
+  font-size: 12px;
   color: #333;
 }
 
@@ -152,34 +151,8 @@ a {
   align-items: center;
   justify-content: center;
   writing-mode: vertical-rl;
-  text-orientation: upright;
   font-weight: bold;
   font-size: 18px;
   color: #2c2c2c;
   padding: 10px;
-}
-
-/* Optional: "torn" effect */
-.ticket::before,
-.ticket::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #f8f1e4,
-    #f8f1e4 5px,
-    #2f2f2f 5px,
-    #2f2f2f 6px
-  );
-}
-
-.ticket::before {
-  left: 66%;
-}
-
-.ticket::after {
-  right: 0;
 }
