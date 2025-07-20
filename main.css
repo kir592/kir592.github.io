@@ -172,8 +172,8 @@ a {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   line-height: 28px;
   overflow: auto;
-  right: 0;
-  bottom: 0;
+  right: 2%;
+  bottom: 2%;
 }
 
 /* Left margin line like a notebook */
