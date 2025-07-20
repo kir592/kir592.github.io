@@ -55,7 +55,7 @@ a {
   color: #222;
   font-family: 'Garamond', 'Times New Roman', serif;
   padding: 40px 30px;
-  margin: 10vh auto;
+  margin: 5vh auto;
   border: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -155,4 +155,34 @@ a {
   font-size: 18px;
   color: #2c2c2c;
   padding: 10px;
+}
+
+.notebook {
+  width: 400px;
+  height: 600px;
+  padding: 40px 30px 30px 80px;
+  background: repeating-linear-gradient(
+    white,
+    white 28px,
+    #d0d0d0 29px
+  );
+  position: absolute;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  line-height: 28px;
+  overflow: auto;
+  right: 0;
+  bottom: 0;
+}
+
+/* Left margin line like a notebook */
+.notebook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  height: 100%;
+  width: 2px;
+  background-color: #ff4d4d; /* red margin line */
 }
