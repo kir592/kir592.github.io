@@ -8,6 +8,8 @@ body {
   background-size: 50px 50px;
 }
 
+
+
 a {
   text-decoration: none;
   color:#000;
@@ -24,11 +26,11 @@ a {
 }
 
 .rotationl {
-  transform: rotate(-2deg); /* Optional vintage tilt */
+  transform: rotate(-2deg); 
 }
 
 .rotationr {
-  transform: rotate(2deg); /* Optional vintage tilt */
+  transform: rotate(2deg);
 }
 
 .polaroid img {
@@ -185,4 +187,21 @@ a {
   height: 100%;
   width: 2px;
   background-color: #ff4d4d; /* red margin line */
+}
+
+.ticket.new::before {
+  content: "new 🔥";
+  position: absolute;
+  top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  z-index: 10;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
